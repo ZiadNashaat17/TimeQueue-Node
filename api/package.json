@@ -4,7 +4,11 @@
   "description": "",
   "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
     "prepare": "husky"
   },
   "author": "Ziad Nashaat",
@@ -16,5 +20,9 @@
     "globals": "^17.0.0",
     "husky": "^9.1.7",
     "prettier": "^3.8.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   }
 }
